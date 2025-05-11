@@ -2,6 +2,23 @@
 name = "rail_fence"
 version = "0.1.0"
 edition = "2024"
+authors = ["Fuad Alizada fuadelizade6@gmail.com"]
+description = "A Rail Fence Cipher implementation in Rust"
+repository = "https://github.com/martian58/rail_fence.git"
+readme = "README.md"
 
 [dependencies]
 clap = "4.0.0"
+
+
+[package.metadata.deb]
+name = "rail_fence"
+maintainer = "Fuad Alizada fuadelizade6@gmail.com"
+extended-description = """
+The Rail Fence Cipher is a transposition cipher that works by writing plaintext 
+in a zigzag pattern across multiple "rails" and then reading off each rail 
+sequentially. This program implements both encryption and decryption.
+"""
+section = "utils"
+priority = "optional"
+copyright = "2025 martian58"
